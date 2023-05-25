@@ -5,29 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Daniel Fernando Valencia Rojas</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="#sobremi">Sobre mí</a>
-                <br>
-                <a href="#">Contactos</a>
+            <nav class="nav-container">
+                <ul class="list">
+                    <li><a href="#sobremi">Sobre mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </nav>
 
-            <figure>
+            <figure class="image-container">
                 <img src="./Imagenes/Foto.jpg" alt="Foto de mi perfil">
                 <figcaption>Foto de perfil</figcaption>
             </figure>
         </header>
         
         <main>
-            <section id="sobremi">
+            <section id="sobremi" class="info-list">
                 <h1>Daniel Fernando Valencia Rojas</h1>
                 <p><strong>Administrador de empresas de profesión</strong> y estudiante de desarrollo de software, dedicado a la formación y mejora de todas las habilidades necesarias para convertirme en un buen programador</p>
                 <hr>
             </section>
 
-            <section>
+            <section class="info-list">
                 <h2>Hobbies</h2>
                     <ul>
                         <li>Estudiar programación en línea</li>
@@ -37,7 +39,7 @@
                     </ul>
             </section>
                 
-            <section>
+            <section class="info-list">
                 <h2>Objetivos</h2>
                     <ol>
                         <li>Conseguir trabajo como administrador o programador</li>
@@ -46,7 +48,7 @@
                     </ol>
             </section>
                 
-            <section>
+            <section class="info-list">
                 <h2>Profesión</h2>
                     <dl>
                         <dt>Administrador de empresas</dt>
@@ -54,5 +56,43 @@
                     </dl>
             </section>
         </main>
+
+        <footer class="footer">
+            <fieldset>
+                <legend><strong>Formulario de Contacto</strong></legend>
+                <form id="contacto" class="class-container">
+                    <label for="nombre">Nombre:
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="correo">Correo:
+                        <input type="emai" id="correo" placeholder="Email">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="genero">Género:
+                        <select name="Género" id="genero">Género
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="nosabe">No Responde</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <label for="asunto">Asunto:
+                        <input type="text" id="asunto" placeholder="Asunto">
+                    </label>
+                    <br>
+                    <br>
+                    <textarea name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <br>
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </fieldset>
+        </footer>
     </body>
 </html>
