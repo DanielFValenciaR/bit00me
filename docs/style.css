@@ -12,7 +12,7 @@ body {
 
 .nav-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 50px;
 }
@@ -24,36 +24,147 @@ body {
 
 .list li a {
     color: black;
-    background-color: gray;
     padding: 10px;
-    margin-right: 20px;
+    margin: 20px;
     border-radius: 2px;
     text-decoration: none;
 }
 
+.list li a:hover {
+    color: rgb(122, 117, 117);
+}
+
+.image-container {
+    margin: 35px;
+}
+
 .image-container img {
     display: block;
-    margin: 0 auto;
+    margin: auto;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 35px 80px black;
+    transition: transform 0.3s ease;
+    filter: brightness(85%);
+}
+
+.image-container img:hover {
+    transform: scale(1.18);
 }
 
 .image-container figcaption {
     text-align: center;
+    color: gray;
 }
 
-.info-list {
+
+.intro-container,.info-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.intro-container {
+    margin: 5px;
+}
+
+.intro-container h1 {
     margin: 10px;
 }
 
-.footer {
+.intro-container p {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.info-container {
+    margin: 20px;
     padding: 5px;
+    border: 2px solid black;
     text-align: center;
 }
 
-.class-container button {
-    border-radius: 3px;
-    margin: 15px 10px 5px;
-    padding: 5px;
+.info-container h2 {
+    margin: 15px;
 }
+
+.list ul, ol{
+    margin-left: 15px;
+}
+
+.form-list fieldset {
+    margin: 15px;
+    padding: 10px;
+    border: 3px solid gray;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-container div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 5px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+
+.form-container button:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer .social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.social-icons img {
+    width: 55px;
+    height: 58px;
+}
+
+
+
+

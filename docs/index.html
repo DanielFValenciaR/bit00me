@@ -24,75 +24,105 @@
         
         <main>
             <section id="sobremi" class="info-list">
-                <h1>Daniel Fernando Valencia Rojas</h1>
-                <p><strong>Administrador de empresas de profesión</strong> y estudiante de desarrollo de software, dedicado a la formación y mejora de todas las habilidades necesarias para convertirme en un buen programador</p>
-                <hr>
+                <div class="intro-container">
+                    <h1>Daniel Fernando Valencia Rojas</h1>
+                    <p><strong>Administrador de empresas de profesión</strong> y estudiante de desarrollo de software, dedicado a la formación y mejora de todas las habilidades necesarias para convertirme en un buen programador</p>
+                    <hr>
+                </div>
+                
             </section>
 
             <section class="info-list">
-                <h2>Hobbies</h2>
+                <div class="info-container list">
+                    <h2>Hobbies</h2>
                     <ul>
                         <li>Estudiar programación en línea</li>
                         <li>Ir al estadio Palogrande o Atanasio Girardot</li>
                         <li>Jugar videojuegos en consola</li>
                         <li>Salir con amigos a pasar el rato</li>
                     </ul>
+                </div>
             </section>
                 
             <section class="info-list">
-                <h2>Objetivos</h2>
+                <div class="info-container list">
+                    <h2>Objetivos</h2>
                     <ol>
                         <li>Conseguir trabajo como administrador o programador</li>
                         <li>Afianzar los conocimientos que he adquirido en Java, Html, Css y Javascript</li>
                         <li>No dejar de aprender todo tipo de conocimiento</li>
                     </ol>
+                </div>
             </section>
                 
             <section class="info-list">
-                <h2>Profesión</h2>
+                <div class="info-container">
+                    <h2>Profesión</h2>
                     <dl>
-                        <dt>Administrador de empresas</dt>
+                        <dt>Administrador de empresas:</dt>
                         <dd>Marketing, recursos humanos, contabilidad, producción, finanzas</dd>
                     </dl>
+                </div>
+            </section>
+
+            <section class="form-list">
+                <fieldset>
+                    <legend><strong>Formulario de Contacto</strong></legend>
+                    <form id="contacto" class="form-container">
+                        <label for="nombre">Nombre:
+                            <input type="text" id="nombre" placeholder="Nombre">
+                        </label>
+    
+                        <label for="correo">Correo:
+                            <input type="emai" id="correo" placeholder="Email">
+                        </label>
+    
+                        <label for="genero">Género:
+                            <select name="Género" id="genero">Género
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="nosabe">No Responde</option>
+                            </select>
+                        </label>
+                        
+                        <label for="asunto">Asunto:
+                            <input type="text" id="asunto" placeholder="Asunto">
+                        </label>
+                        
+                        <textarea name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        
+                        <div>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpiar</button>
+                        </div>
+                    </form>
+                </fieldset>
             </section>
         </main>
 
         <footer class="footer">
-            <fieldset>
-                <legend><strong>Formulario de Contacto</strong></legend>
-                <form id="contacto" class="class-container">
-                    <label for="nombre">Nombre:
-                        <input type="text" id="nombre" placeholder="Nombre">
-                    </label>
-                    <br>
-                    <br>
-                    <label for="correo">Correo:
-                        <input type="emai" id="correo" placeholder="Email">
-                    </label>
-                    <br>
-                    <br>
-                    <label for="genero">Género:
-                        <select name="Género" id="genero">Género
-                            <option value="masculino">Masculino</option>
-                            <option value="femenino">Femenino</option>
-                            <option value="nosabe">No Responde</option>
-                        </select>
-                    </label>
-                    <br>
-                    <br>
-                    <label for="asunto">Asunto:
-                        <input type="text" id="asunto" placeholder="Asunto">
-                    </label>
-                    <br>
-                    <br>
-                    <textarea name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <br>
-                    <div>
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpiar</button>
-                    </div>
-                </form>
-            </fieldset>
+            <ul class="social-icons"
+                <li>
+                    <a href="https://www.linkedin.com/in/daniel-fernando-valencia-rojas-69542a18a/" class="social-icon" id="LinkedIn">
+                        <img src="./Imagenes/linkedin.svg" alt="Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/DanielFValenciaR" class="social-icon" id="GitHub">
+                        <img src="./Imagenes/github-brands.svg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/DanielVoc11" class="social-icon" id="Twitter">
+                        <img src="./Imagenes/twitter-brands.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://platzi.com/p/dfvalenciar658/" class="social-icon" id="Platzi">
+                        <img src="./Imagenes/platzi.png" alt="Platzi">
+                    </a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
