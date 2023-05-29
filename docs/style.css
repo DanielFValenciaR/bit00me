@@ -25,7 +25,7 @@ body {
 .list li a {
     color: black;
     padding: 10px;
-    margin: 20px;
+    margin: 15px;
     border-radius: 2px;
     text-decoration: none;
 }
@@ -57,7 +57,6 @@ body {
     color: gray;
 }
 
-
 .intro-container,.info-container {
     display: flex;
     flex-direction: column;
@@ -66,37 +65,44 @@ body {
 }
 
 .intro-container {
-    margin: 5px;
+    margin: 0 15px;
 }
 
 .intro-container h1 {
     margin: 10px;
+    text-align: center;
 }
 
 .intro-container p {
-    margin: 5px;
-    padding: 5px 10px;
+    text-align: center;
 }
 
 .info-container {
     margin: 20px;
     padding: 5px;
     border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 2);
     text-align: center;
 }
 
 .info-container h2 {
-    margin: 15px;
+    margin: 10px;
 }
 
 .list ul, ol{
     margin-left: 15px;
 }
 
+.info-container ul, ol, dl {
+    padding: 10px;
+}
+
 .form-list fieldset {
-    margin: 15px;
+    margin: 25px 15px;
     padding: 10px;
     border: 3px solid gray;
+    border-radius: 5px;
 }
 
 .form-container {
@@ -114,7 +120,7 @@ body {
     width: 100%;
     padding: 10px;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     margin-bottom: 10px;
 }
 
@@ -157,7 +163,7 @@ body {
 }
 
 .footer .social-icons li {
-    margin: 10px;
+    margin: 5px;
 }
 
 .footer .social-icons a {
@@ -174,7 +180,6 @@ body {
     height: 58px;
 }
 
-
 .social-icons .social-linkedin {
     background: #0077b0;
 }
@@ -190,4 +195,65 @@ body {
 .social-icons .social-platzi {
     background: #121F3d;
 }
+
+@media screen and (min-width: 768px) {
+    .intro-container {
+        margin: 5px 20px;
+        padding: 5px;
+    }
+
+    .info-list, .form-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-container {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .info-container h2 {
+        margin: 5px;
+    }
+
+    .list ul, ol {
+        padding: 2px 10px;
+    }
+
+    .form-list fieldset {
+        width: 70%;
+    }
+
+    .form-container {
+        margin: 5px;
+    }
+
+    .footer .social-icons li {
+        margin-right: 25px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .intro-container {
+        margin: 5px 30px;
+    }
+
+    .info-container {
+        width: 60%;
+    }
+
+    .form-list fieldset {
+        width: 50%;
+    }
+
+    .form-container {
+        margin: 10px;
+    }
+
+    .footer .social-icons li {
+        margin-right: 60px;
+    }
+}
+
 
